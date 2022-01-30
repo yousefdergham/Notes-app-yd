@@ -14,8 +14,11 @@ TABLE_NAME: table.tableName,
 },
 routes: 
 {
+    "GET    /notes": "src/list.main",
     "POST   /notes": "src/create.main",
     "GET    /notes/{id}": "src/get.main",
+    "PUT    /notes/{id}": "src/update.main",
+    "DELETE /notes/{id}": "src/delete.main",
 },
 });
 // Allow the API to access the table
