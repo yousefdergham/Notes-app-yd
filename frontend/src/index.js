@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
 import config from './config';
+import { initSentry } from './lib/errorLib';
 
+initSentry();
 
 Amplify.configure({
   Auth: {
@@ -31,6 +33,7 @@ Amplify.configure({
     ]
   }
 });
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

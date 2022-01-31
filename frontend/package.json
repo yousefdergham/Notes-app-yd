@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sentry/browser": "^6.17.3",
+    "@stripe/react-stripe-js": "^1.7.0",
+    "@stripe/stripe-js": "^1.22.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -41,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@serverless-stack/static-site-env": "^0.60.9"
+    "@serverless-stack/static-site-env": "^0.60.8"
   }
 }

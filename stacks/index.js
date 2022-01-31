@@ -1,7 +1,8 @@
-import ApiStack from "./ApiStack";
 import StorageStack from "./StorageStack";
+import ApiStack from "./ApiStack";
 import AuthStack from "./AuthStack";
 import FrontendStack from "./FrontendStack";
+
 export default function main(app) {
   const storageStack = new StorageStack(app, "storage");
 
